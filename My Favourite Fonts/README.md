@@ -1,0 +1,3 @@
+- [👉 Fira Code ](https://fonts.google.com/specimen/Fira+Code)
+- [👉 Jetbrains ](https://www.jetbrains.com/lp/mono/)
+- [👉 Operator Mono ](https://github.com/willfore/vscode_operator_mono_lig)
