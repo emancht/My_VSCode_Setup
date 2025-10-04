@@ -1,0 +1,96 @@
+{
+  // ===================================
+  // 1. General Editor Settings
+  // ===================================
+
+  "editor.fontSize": 20,
+  // "editor.fontWeight": "bold",
+  "editor.fontFamily": "'Dank Mono', 'Fira Code', 'Operator Mono', monospace",
+  // "editor.fontFamily": "'Operator Mono Lig', 'Fira Code', monospace",
+  "editor.fontLigatures": true,
+  "editor.tabSize": 2,
+
+  // TextMate Scopes for Italic Styling (Expanded/Improved)
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          "comment"
+          // "keyword",
+          // "variable",
+          // "string",
+          // "storage",
+          // "entity.name.function",
+          // "entity.name.type",
+          // "meta.parameter",
+          // "constant"
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      }
+    ]
+  },
+
+  "editor.wordWrap": "on",
+  "editor.minimap.enabled": true,
+  "editor.linkedEditing": true,
+
+  "editor.smoothCaretAnimation": true,
+
+  "editor.cursorBlinking": "expand",
+  "editor.formatOnSave": true,
+
+  // ===================================
+  // 2. Code Formatting & ESLint integration
+  // ===================================
+
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "eslint.alwaysShowStatus": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    // Added 'source.fixAll' for a comprehensive fix on save
+    "source.fixAll": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  "prettier.singleQuote": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always", // Added for TypeScript consistency
+
+  // ===================================
+  // 3. Terminal settings
+  // ===================================
+
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.fontFamily": "'Fira Code', monospace",
+
+  "workbench.colorCustomizations": {
+    "terminal.background": "#1D2021",
+    "terminal.foreground": "#A89984"
+  },
+
+  // ===================================
+  // 4. Workbench UI & Themes
+  // ===================================
+
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.colorTheme": "One Dark Pro Night Flat",
+
+  // ===================================
+  // 5. Language Overrides (Cleaned Up)
+  // ===================================
+
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // ===================================
+  // 6. Miscellaneous
+  // ===================================
+
+  "git.suggestSmartCommit": false,
+
+  // Security/Trust Settings (Kept, as these are user-specific preferences)
+  "security.workspace.trust.untrustedFiles": "open",
+  "mdb.mcp.server": "enabled"
+}
